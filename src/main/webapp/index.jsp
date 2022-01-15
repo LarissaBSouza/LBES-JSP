@@ -38,5 +38,17 @@
 	<%=professor %>
 	
 	
+	
+	
+	<%!int second = now.get(Calendar.SECOND); %>
+	
+	<%! if (second % 2 == 0){
+			out.println("É PAR");
+		}else{
+			out.println("É ÍMPAR");
+		}%>
+	}
+	
+	
 </body>
 </html>
