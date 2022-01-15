@@ -33,6 +33,9 @@
 		}else{
 			out.println("O nome do professor é outro.");
 		}%>
+		
+	<!-- Expression -->
+	<%=professor %>
 	
 	
 </body>
