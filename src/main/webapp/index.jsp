@@ -24,7 +24,8 @@
 							}%> </h1>
 	
 	
-	
+	<!-- Declaration -->
+	<%! String professor = "Raphael" %>
 	
 	
 	
