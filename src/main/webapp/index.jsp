@@ -27,6 +27,12 @@
 	<!-- Declaration -->
 	<%! String professor = "Raphael" %>
 	
+	<!-- Scriptlet -->
+	<%! if (professor = "Raphael"){
+			out.println("O nome do professor é Raphael");
+		}else{
+			out.println("O nome do professor é outro.");
+		}%>
 	
 	
 </body>
