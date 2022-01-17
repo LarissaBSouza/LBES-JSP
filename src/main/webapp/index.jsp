@@ -25,10 +25,10 @@
 	
 	
 	<!-- Declaration -->
-	<%! String professor = "Raphael" %>
+	<%! String professor = "Raphael"; %>
 	
 	<!-- Scriptlet -->
-	<%! if (professor = "Raphael"){
+	<% if (professor == "Raphael"){
 			out.println("O nome do professor é Raphael");
 		}else{
 			out.println("O nome do professor é outro.");
@@ -37,12 +37,14 @@
 	<!-- Expression -->
 	<%=professor %>
 	
+	<%! Calendar cal = Calendar.getInstance; %>
 	
+	<%! int calcularSegundo(){
+		return cal.get(Calendar.SECOND);}
+	%>
+
 	
-	
-	<%!int second = now.get(Calendar.SECOND); %>
-	
-	<%! if (second % 2 == 0){
+	<% if (calcularSegundo() % 2 == 0){
 			out.println("É PAR");
 		}else{
 			out.println("É ÍMPAR");
